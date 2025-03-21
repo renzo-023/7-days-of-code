@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&family=Poiret+One&family=Press+Start+2P&display=swap");
+
+:root {
+  --primary-font: "Nabla", system-ui;
+  --secondary-font: "Press Start 2P", system-ui;
+  --tertiary-font: "Poiret One", sans-serif;
+
+  --color-1: #000000;
+  --color-2: #2d2d2d;
+  --color-3: #ffcc00;
+  --color-4: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-1);
+  color: white;
+  animation: grow 0.8s ease-out forwards;
+}
+
+button,
+a {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  color: var(--color-4);
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5.5rem;
+}
+
+.container__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+
+.container__main__title {
+  font-family: var(--primary-font);
+  font-size: 4rem;
+}
+
+.container__main__subtitle {
+  font-family: var(--secondary-font);
+}
+
+.container__buttons {
+  padding: 1.875rem 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: var(--color-2);
+  border-radius: 1rem;
+  transition: 600ms;
+}
+
+.container__buttons__link {
+  padding: 1rem 2.8125rem;
+  background-color: var(--color-1);
+  border-radius: 0.5rem;
+  transition: 600ms;
+}
+
+.container__buttons__link:hover {
+  color: var(--color-1);
+  background-color: var(--color-3);
+  transform: scale(1.2);
+  transition: 300ms;
+}
+
+.footer {
+  padding: 1.25rem;
+  background-color: var(--color-2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content {
+  margin-left: 45%;
+}
+
+.footer__content__text {
+  font-family: var(--tertiary-font);
+}
+
+.footer__buttons__link {
+  font-size: 0.75rem;
+  transition: 600ms;
+}
+
+.footer__buttons__link:hover {
+  color: var(--color-3);
+  transition: 300ms;
+}
