@@ -43,12 +43,17 @@ function displayQuest(title, text) {
 }
 
 function questSubmit() {
-  document.getElementById("quest-submit").classList.add("display-none");
-  let questAnswer = document.getElementById("quest-input").value;
-  displayQuest(
-    "quest-question",
-    `Incrível! ${questAnswer} é uma ótima linguagem de programação.`
-  );
+  inputHtml = document.getElementById("input").value;
+  if (document.getElementById("quest-input").value == "") {
+    alert("O campo deve ser preenchido!");
+  } else {
+    document.getElementById("quest-submit").classList.add("display-none");
+    let questAnswer = document.getElementById("quest-input").value;
+    displayQuest(
+      "quest-question",
+      `Incrível! ${questAnswer} é uma ótima linguagem de programação.`
+    );
+  }
 }
 
 function positiveButton() {
