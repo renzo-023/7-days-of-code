@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7 Days Of Code</title>
+    <link rel="stylesheet" href="./assets/css/day-2.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <article class="container__main">
+          <h1 class="container__main__title">7 DAYS OF CODE</h1>
+          <h2 class="container__main__subtitle">Dia 02</h2>
+        </article>
+        <article class="container__login">
+          <h3 class="container__login__title" id="input-title"></h3>
+          <p class="container__login__info" id="info"></p>
+          <div class="container__login__submit" id="input-submit">
+            <input
+              class="container__login__submit__input"
+              type="text"
+              id="input"
+            />
+            <button
+              class="container__login__submit__button"
+              type="submit"
+              onclick="addData()"
+            >
+              Enviar
+            </button>
+          </div>
+        </article>
+        <article class="container__quest display-none" id="quest">
+          <h3 class="container__quest__title" id="quest-tilte">Questionário</h3>
+          <p class="container__quest__question" id="quest-question"></p>
+          <div class="container__quest__buttons" id="quest-buttons">
+            <button
+              class="container__quest__buttons__button"
+              onclick="positiveButton()"
+            >
+              Sim
+            </button>
+            <button
+              class="container__quest__buttons__button"
+              onclick=" negativeButton()"
+            >
+              Não
+            </button>
+          </div>
+          <div class="container__quest__submit display-none" id="quest-submit">
+            <input
+              class="container__quest__submit__input"
+              type="text"
+              id="quest-input"
+            />
+            <button
+              class="container__quest__submit__button"
+              type="submit"
+              onclick="questSubmit()"
+            >
+              Enviar
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <article class="footer__buttons">
+          <a href="./index.html" class="footer__buttons__link"
+            >DESAFIO ANTERIOR</a
+          >
+        </article>
+        <article class="footer__content">
+          <p class="footer__content__text">Desenvolvido por Renzo.</p>
+        </article>
+        <article class="footer__buttons">
+          <a href="./day-3.html" class="footer__buttons__link"
+            >PRÓXIMO DESAFIO</a
+          >
+        </article>
+      </section>
+    </footer>
+  </body>
+  <script src="./assets/js/day-2.js"></script>
+</html>

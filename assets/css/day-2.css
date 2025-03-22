@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&family=Poiret+One&@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Nabla&family=Poiret+One&family=Press+Start+2P&display=swap');=Press+Start+2P&display=swap");
+
+:root {
+  --primary-font: "Nabla", system-ui;
+  --secondary-font: "Press Start 2P", system-ui;
+  --tertiary-font: "Poiret One", sans-serif;
+  --quaternary-font: "Funnel Sans", sans-serif;
+
+  --color-1: #000000;
+  --color-2: #2d2d2d;
+  --color-3: #ffcc00;
+  --color-4: #ffffff;
+  --transparent: #00000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-1);
+  color: white;
+  animation: grow 0.8s ease-out forwards;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3,
+p {
+  font-size: 16px;
+}
+
+button,
+a {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  color: var(--color-4);
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 88px;
+}
+
+.container__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 64px;
+}
+
+.container__main__title {
+  font-family: var(--primary-font);
+}
+
+.container__main__subtitle {
+  font-family: var(--secondary-font);
+}
+
+.container__login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.375rem 2.75rem;
+  border-radius: 0.6rem;
+  background-color: var(--color-2);
+  gap: 20px;
+}
+
+.container__login__title {
+  font-family: var(--secondary-font);
+}
+
+.container__login__info {
+  font-family: var(--quaternary-font);
+}
+
+.container__login__submit {
+  display: flex;
+  border: solid 0.125rem var(--color-3);
+  border-radius: 1rem;
+  background-color: var(--color-2);
+}
+
+.container__login__submit__input {
+  padding: 12px;
+  background-color: var(--transparent);
+  color: var(--color-4);
+  border: none;
+  outline: 0;
+}
+
+.container__login__submit__button {
+  padding: 8px;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  border-left: solid 2px var(--color-3);
+  background-color: var(--transparent);
+  font-family: var(--quaternary-font);
+  color: var(--color-4);
+  transition: 600ms;
+}
+
+.container__login__submit__button:hover {
+  transition: 300ms;
+  color: var(--color-1);
+  background-color: var(--color-3);
+}
+
+.container__quest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.375rem 2.75rem;
+  border-radius: 0.6rem;
+  background-color: var(--color-2);
+  gap: 20px;
+}
+
+.container__quest__title {
+  font-family: var(--secondary-font);
+}
+
+.container__quest__question {
+  font-family: var(--quaternary-font);
+}
+
+.container__quest__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container__quest__buttons__button {
+  padding: 10px;
+  background-color: var(--transparent);
+  border: solid 2px var(--color-3);
+  border-radius: 10px;
+  transition: 600ms;
+}
+
+.container__quest__buttons__button:hover {
+  background-color: var(--color-3);
+  color: var(--color-1);
+  transition: 300ms;
+}
+
+.container__quest__submit {
+  display: flex;
+  border: solid 0.125rem var(--color-3);
+  border-radius: 1rem;
+  background-color: var(--color-2);
+}
+
+.container__quest__submit__input {
+  padding: 12px;
+  background-color: var(--transparent);
+  color: var(--color-4);
+  border: none;
+  outline: 0;
+}
+
+.container__quest__submit__button {
+  padding: 8px;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  border-left: solid 2px var(--color-3);
+  background-color: var(--transparent);
+  font-family: var(--quaternary-font);
+  color: var(--color-4);
+  transition: 600ms;
+}
+
+.container__quest__submit__button:hover {
+  transition: 300ms;
+  color: var(--color-1);
+  background-color: var(--color-3);
+}
+
+.footer {
+  padding: 1.25rem;
+  background-color: var(--color-2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content__text {
+  font-family: var(--tertiary-font);
+}
+
+.footer__buttons__link {
+  font-size: 0.75rem;
+  transition: 600ms;
+}
+
+.footer__buttons__link:hover {
+  color: var(--color-3);
+  transition: 300ms;
+}
+
+.display-none {
+  display: none;
+}
